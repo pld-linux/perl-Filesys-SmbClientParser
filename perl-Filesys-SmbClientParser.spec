@@ -3,8 +3,8 @@
 %bcond_without	tests	# don't perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Filesys
-%define	pnam	SmbClientParser
+%define		pdir	Filesys
+%define		pnam	SmbClientParser
 Summary:	Filesys::SmbClientParser - Perl client to reach Samba ressources with smbclient
 Summary(pl):	Filesys::SmbClientParser - klient perlowy zasobów Samby korzystaj±cy z smbclienta
 Name:		perl-Filesys-SmbClientParser
