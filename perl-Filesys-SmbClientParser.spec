@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Filesys
 %define	pnam	SmbClientParser
-Summary:	Filesys-SmbClientParser perl module
-Summary(pl):	Modu³ perla Filesys-SmbClientParser
+Summary:	Filesys::SmbClientParser perl module
+Summary(pl):	Modu³ perla Filesys::SmbClientParser
 Name:		perl-Filesys-SmbClientParser
 Version:	2.1
 Release:	1
@@ -16,10 +16,10 @@ Requires:	samba-client
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Filesys-SmbClientParser - use smbclient.
+Filesys::SmbClientParser - use smbclient.
 
 %description -l pl
-Filesys-SmbClientParser - u¿ywa smbclient.
+Filesys::SmbClientParser - u¿ywa smbclient.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
