@@ -1,0 +1,17 @@
+--- ./Makefile.PL.org	Fri Jan 25 01:42:27 2002
++++ ./Makefile.PL	Mon Jun  3 17:12:32 2002
+@@ -2,10 +2,10 @@
+ use strict;
+ 
+ # tests demande ?
+-my $ans = 
+-  prompt("Do you want make tests ?(you will be prompted for server / \n".
+-	   "worgroup / share / user / password to make read write access.",
+-	   "yes");
++my $ans = "no";
++#  prompt("Do you want make tests ?(you will be prompted for server / \n".
++#	   "worgroup / share / user / password to make read write access.",
++#	   "yes");
+ if ($ans =~ /^y(es)?$/i) 
+   {
+     my $server = prompt("Server ?","localhost");
