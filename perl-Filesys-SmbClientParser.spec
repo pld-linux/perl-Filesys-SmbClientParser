@@ -23,8 +23,8 @@ Summary(sv):	Filesys::SmbClientParser Perlmodul
 Summary(uk):	Модуль для Perl Filesys::SmbClientParser
 Summary(zh_CN):	Filesys::SmbClientParser Perl дё©И
 Name:		perl-Filesys-SmbClientParser
-Version:	2.3
-Release:	2
+Version:	2.5
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
