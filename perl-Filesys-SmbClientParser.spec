@@ -14,7 +14,7 @@ Summary(fr):	Module Perl Filesys::SmbClientParser
 Summary(it):	Modulo di Perl Filesys::SmbClientParser
 Summary(ja):	Filesys::SmbClientParser Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Filesys::SmbClientParser ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Filesys::SmbClientParser
+Summary(nb):	Perlmodul Filesys::SmbClientParser
 Summary(pl):	Modu³ Perla Filesys::SmbClientParser
 Summary(pt):	Módulo de Perl Filesys::SmbClientParser
 Summary(pt_BR):	Módulo Perl Filesys::SmbClientParser
