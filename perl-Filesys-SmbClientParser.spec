@@ -1,10 +1,29 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Filesys
 %define	pnam	SmbClientParser
-Summary:	Filesys::SmbClientParser perl module
-Summary(pl):	Modu³ perla Filesys::SmbClientParser
+Summary:	Filesys::SmbClientParser Perl module
+Summary(cs):	Modul Filesys::SmbClientParser pro Perl
+Summary(da):	Perlmodul Filesys::SmbClientParser
+Summary(de):	Filesys::SmbClientParser Perl Modul
+Summary(es):	Módulo de Perl Filesys::SmbClientParser
+Summary(fr):	Module Perl Filesys::SmbClientParser
+Summary(it):	Modulo di Perl Filesys::SmbClientParser
+Summary(ja):	Filesys::SmbClientParser Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Filesys::SmbClientParser ÆŞ ¸ğÁÙ
+Summary(no):	Perlmodul Filesys::SmbClientParser
+Summary(pl):	Modu³ Perla Filesys::SmbClientParser
+Summary(pt):	Módulo de Perl Filesys::SmbClientParser
+Summary(pt_BR):	Módulo Perl Filesys::SmbClientParser
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Filesys::SmbClientParser
+Summary(sv):	Filesys::SmbClientParser Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Filesys::SmbClientParser
+Summary(zh_CN):	Filesys::SmbClientParser Perl Ä£¿é
 Name:		perl-Filesys-SmbClientParser
-Version:	2.1
+Version:	2.3
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -28,6 +47,7 @@ Filesys::SmbClientParser - u¿ywa smbclient.
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
