@@ -16,7 +16,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	16f73fb28db6e2d7f97690f01f6c1bd0
 Patch0:		%{name}-notest.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 Requires:	samba-client
 %if %{with tests}
 BuildRequires:	samba-client
