@@ -26,15 +26,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Filesys::SmbClientParser module is a Perl client to reach Samba
-ressources.  SmbClientParser works with output of bin smbclient, so it
-doesn't work on Win* platforms (but query of Win* platform works of
-course).
+ressources.  SmbClientParser works with output of bin smbclient, so
+it doesn't work on Win* platforms (but query of Win* platform works
+of course).
 
 %description -l pl
 Modu³ Filesys::SmbClientParser jest perlowym klientem zasobów Samby.
-SmbClientParser dzia³a na wyj¶ciu programu bunarnego smbclient, wiêc
-nie bêdzie dzia³aæ na platformach Win* (jednak¿e ³±czenie sie z
-serwerem Win* oczywi¶cie dzia³a).
+SmbClientParser dzia³a na wyj¶ciu programu smbclient, wiêc nie bêdzie
+dzia³aæ na platformach Win* (jednak¿e ³±czenie sie z serwerem Win*
+oczywi¶cie dzia³a).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
