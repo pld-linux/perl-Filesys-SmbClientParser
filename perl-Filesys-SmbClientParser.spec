@@ -24,12 +24,12 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Filesys::SmbClientParser
 Summary(zh_CN):	Filesys::SmbClientParser Perl Ä£¿é
 Name:		perl-Filesys-SmbClientParser
 Version:	2.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-notest.patch
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 Requires:	samba-client
 BuildArch:	noarch
@@ -46,7 +46,8 @@ Filesys::SmbClientParser - u¿ywa smbclient.
 %patch0 -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -61,5 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README Changes
-%{perl_sitelib}/Filesys/*.pm
+%{perl_vendorlib}/Filesys/*.pm
 %{_mandir}/man3/*
