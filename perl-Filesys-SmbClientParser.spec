@@ -6,7 +6,7 @@
 %define		pdir	Filesys
 %define		pnam	SmbClientParser
 Summary:	Filesys::SmbClientParser - Perl client to reach Samba ressources with smbclient
-Summary(pl.UTF-8):   Filesys::SmbClientParser - klient perlowy zasobów Samby korzystający z smbclienta
+Summary(pl.UTF-8):	Filesys::SmbClientParser - klient perlowy zasobów Samby korzystający z smbclienta
 Name:		perl-Filesys-SmbClientParser
 Version:	2.7
 Release:	2
