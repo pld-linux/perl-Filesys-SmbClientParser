@@ -9,7 +9,7 @@ Summary:	Filesys::SmbClientParser - Perl client to reach Samba ressources with s
 Summary(pl.UTF-8):	Filesys::SmbClientParser - klient perlowy zasobów Samby korzystający z smbclienta
 Name:		perl-Filesys-SmbClientParser
 Version:	2.7
-Release:	2
+Release:	3
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
