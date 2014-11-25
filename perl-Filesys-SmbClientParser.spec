@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# don't perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Filesys
 %define		pnam	SmbClientParser
+%include	/usr/lib/rpm/macros.perl
 Summary:	Filesys::SmbClientParser - Perl client to reach Samba ressources with smbclient
 Summary(pl.UTF-8):	Filesys::SmbClientParser - klient perlowy zasobów Samby korzystający z smbclienta
 Name:		perl-Filesys-SmbClientParser
@@ -15,20 +15,21 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	16f73fb28db6e2d7f97690f01f6c1bd0
 Patch0:		%{name}-notest.patch
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Filesys-SmbClientParser/
 BuildRequires:	perl-devel >= 1:5.8.0
-Requires:	samba-client
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	samba-client
 %endif
+Requires:	samba-client
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Filesys::SmbClientParser module is a Perl client to reach Samba
-ressources.  SmbClientParser works with output of bin smbclient, so
-it doesn't work on Win* platforms (but query of Win* platform works
-of course).
+ressources. SmbClientParser works with output of bin smbclient, so it
+doesn't work on Win* platforms (but query of Win* platform works of
+course).
 
 %description -l pl.UTF-8
 Moduł Filesys::SmbClientParser jest perlowym klientem zasobów Samby.
