@@ -4,7 +4,6 @@
 
 %define		pdir	Filesys
 %define		pnam	SmbClientParser
-%include	/usr/lib/rpm/macros.perl
 Summary:	Filesys::SmbClientParser - Perl client to reach Samba ressources with smbclient
 Summary(pl.UTF-8):	Filesys::SmbClientParser - klient perlowy zasobów Samby korzystający z smbclienta
 Name:		perl-Filesys-SmbClientParser
